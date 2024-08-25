@@ -1,0 +1,2 @@
+Prefix plugins/Isomap/example/
+Plugin Isomap inputfile isomap.mat outputfile isomap_out.png
