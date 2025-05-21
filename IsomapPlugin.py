@@ -146,6 +146,8 @@ class IsomapPlugin:
     print("\nIsomap\n--------\n")
     D = make_adjacency(m, eps=386, dist_func="cityblock")
     z = isomap(D)
+    outf=open(outputfile+".txt", 'w')
+    outf.write(str(z))
     plot_graph(z, x=m, my_title="isomap resutlt", filename=outputfile)
     print("\n\n")
 
